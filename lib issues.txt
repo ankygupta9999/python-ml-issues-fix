@@ -1,0 +1,11 @@
+------------------------------
+Issue: Rasa: Issue while installing Rasa on PIP version > 20.2 taking LONG TIME
+------------------------------
+Fix: Install like below with virutalenv
+
+virtualenv venv --no-pip
+venv\Scripts\activate
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python get-pip.py pip==20.2
+pip install rasa
+------------------------------
